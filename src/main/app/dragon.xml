@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <flow name="dragonFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/hub" doc:name="HTTP"/>
         <set-payload value="welcome" doc:name="Set Payload"/>
+        <logger message="log" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
