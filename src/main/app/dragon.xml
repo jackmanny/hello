@@ -10,6 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <flow name="dragonFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/hub" doc:name="HTTP"/>
         <set-payload value="welcome to dragon world " doc:name="Set Payload"/>
-        <logger message="logg" level="INFO" doc:name="Logger"/>
+        <logger message="loggg" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
